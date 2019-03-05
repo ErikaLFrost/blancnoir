@@ -16,6 +16,7 @@ html, body{
       "footer";
   }
 
+/* Header-bild */
 .hero {
     display: flex;
     height: 100vh;
@@ -23,38 +24,44 @@ html, body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     scroll-snap-type: y mandatory;
 }
-/* Kod för hamburgermeny */
 
+.container{
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* Kod för hamburgermeny */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: relative;
 }
 
-.topnav > a > img{
-    background-color: #ffffff;
-}
 /* Gömmer länkarna i hamburgaren */
 .topnav #myLinks{
     display: none;
+    margin: 29px 0 0 0;
+    
 }
 
 /* Stylar navigations-länkarna */
 .topnav a {
-    color: white;
+    color: black;
+    background-color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     display: block;
 }
 
 .topnav a.icon{
-    background-attachment: black;
+    background-attachment: white;
     display: block;
-    position: absolute;
-    right: 0;
+    position: fixed;
     top: 0;
 }
 
@@ -64,14 +71,15 @@ html, body{
 }
 
 .active{
-    background-color: grey;
-    color: #ddd;
+    background-color: white;
+    color: black;
 }
 
  #menu-icon{
     align-self: right;
  }
 
+ /* Grundstruktur för main-segment */
  main{
     grid-area: main;
  }
