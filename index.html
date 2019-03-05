@@ -6,11 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blanc Noir Film Festival</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="hero">
             <a href="./index.html"></a>
-            <nav><a id="menu-icon"><img src="./images/menu.svg" alt="menu"></a></nav>
+            <!-- Hamburgemeny -->
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+            <!-- Undermeny -->
+            <div id="myLinks">
+                <a href="#program">Program</a>
+                <a href="#contact">Kontakt</a>
+            <!-- JS för att få fram undermenyn när användaren trycker på hamburgaren -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            
     </header>
 
     <main>
@@ -57,5 +69,15 @@
     </main>
 
 <footer></footer>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>

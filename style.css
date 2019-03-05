@@ -25,6 +25,48 @@ html, body{
     background-repeat: no-repeat;
     scroll-snap-type: y mandatory;
 }
+/* Kod för hamburgermeny */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav > a > img{
+    background-color: #ffffff;
+}
+/* Gömmer länkarna i hamburgaren */
+.topnav #myLinks{
+    display: none;
+}
+
+/* Stylar navigations-länkarna */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon{
+    background-attachment: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.active{
+    background-color: grey;
+    color: #ddd;
+}
 
  #menu-icon{
     align-self: right;
@@ -77,6 +119,13 @@ html, body{
     text-align: left;
 }
 
+.fbox-movieinfo{
+    flex: 50%;
+    width: 50%;
+    padding: 15px 4px;
+    text-align: left;
+}
+
 .fbox-contact > h2{
     font-size: 50px;
     margin: 0;
@@ -84,6 +133,11 @@ html, body{
 
 .fbox-contact > form{
     font-size: 20px;
+}
+
+.plot{
+    font-style: italic;
+    font-size: 18px;
 }
 
 input[type=text] {
@@ -201,6 +255,18 @@ button {
 
 footer{
     grid-area: footer;
+}
+
+@media (max-width: 1130px){
+.fbox-movieinfo{
+    flex: 100%;
+    width: 100vw;
+    text-align: center;
+}
+
+.fbox-movieinfo > iframe{
+    width: 80vw;
+}
 }
 
 /* Tablet */
