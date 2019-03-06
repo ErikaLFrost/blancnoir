@@ -261,10 +261,36 @@ button {
     background-position: 0 100%;
   }
 
+/* Footer */
 footer{
     grid-area: footer;
+    padding: 25px 25px 5px;
 }
 
+footer > hr{
+    border-top: 2px dotted grey;
+}
+/* Styling footert-text */
+footer > p{
+    text-align: end;
+    margin: 0;
+    font-size: 2vh;
+}
+
+footer > p#hola{
+    text-align: start;
+    padding: 0px 0px 2px;
+    font-size: 15px;
+}
+
+/* Styling soc. medier-knappar */
+footer > a > img{
+    width: 5vw;
+    height: auto;
+    margin: 5px;
+}
+
+/* Regel för att få filminfon att lägga sig under trailern vid mindre skärm */
 @media (max-width: 1130px){
 .fbox-movieinfo{
     flex: 100%;
