@@ -93,6 +93,50 @@ html, body{
     scroll-snap-type: y mandatory;
 }
 
+/* Styling för Program-sida */
+.fbox-program{
+    flex: 30vw;
+    width: 30vw;
+    padding: 10px 4px 0px 25px;
+    text-align: start;
+}
+
+.fbox-program > h2{
+    font-size: 30px;
+}
+
+.fbox-program > span{
+    font-size: 25px;
+}
+
+.fbox-program > a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.fbox-program > a:hover{
+    color: #704214;
+}
+
+.vertical-line-1{
+    border-right: 4px dotted black;
+    height: 163px;
+    position: absolute;
+    left: 30%;
+    top: 26px;
+}
+
+.vertical-line-2{
+    border-right: 4px dotted black;
+    height: 163px;
+    position: absolute;
+    right: 34%;
+    top: 26px;
+}
+
+/* Styling för startsida */
+
 .fbox-movies{
     flex: 50%;
     width: 50%;
@@ -295,7 +339,7 @@ footer > a > img{
     margin: 5px;
 }
 
-/* Regel för att få filminfon att lägga sig under trailern vid mindre skärm */
+/* */
 @media (max-width: 1130px){
 .fbox-movieinfo{
     flex: 100%;
@@ -305,6 +349,14 @@ footer > a > img{
 
 .fbox-movieinfo > iframe{
     width: 80vw;
+}
+
+.vertical-line-1{
+    height: 211px;
+}
+
+.vertical-line-2{
+    height: 211px;
 }
 }
 
@@ -322,5 +374,20 @@ footer > a > img{
     }
     .fbox-movies{
         flex: 100%;
+    }
+
+    .fbox-program{
+        flex: 100%;
+        width: 100vw;
+        padding: 10px 4px 0px 25px;
+        text-align: start;
+    }
+
+    .vertical-line-1{
+        display: none;
+    }
+    
+    .vertical-line-2{
+        display: none;
     }
 }
