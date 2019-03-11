@@ -36,9 +36,8 @@ html, body{
 
 /* Kod för hamburgermeny */
 .topnav {
-    overflow: hidden;
     background-color: black;
-    position: relative;
+    position: absolute;
 }
 
 /* Gömmer länkarna i hamburgaren */
@@ -61,7 +60,7 @@ html, body{
 .topnav a.icon{
     background-attachment: white;
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
 }
 
@@ -142,13 +141,22 @@ html, body{
     width: 50%;
     padding: 10px 4px;
     text-align: center;
-    scroll-snap-align: center;
+    position: relative
 }
 
 .fbox-movies > a > img {
     margin-top: 8px;
     vertical-align: middle;
     max-width: 90%;
+}
+
+.movietext{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    font-size: 4.5vw;
+    color: rgb(37, 37, 36);
 }
 
 .fbox-movies > a > img:hover{
@@ -158,10 +166,13 @@ html, body{
     filter: sepia(0.6) opacity(0.6);
 }
 
-.movietext{
-    position: absolute;
+.fbox-movies > a:hover .movietext{
+    display: flex;
 }
 
+
+
+/* Styling för kontakt-sidan */
 .fbox-contact-img{
     flex: 50%;
     width: 50%;
@@ -176,13 +187,6 @@ html, body{
     text-align: left;
 }
 
-.fbox-movieinfo{
-    flex: 50%;
-    width: 50%;
-    padding: 15px 4px;
-    text-align: left;
-}
-
 .fbox-contact > h2{
     font-size: 50px;
     margin: 0;
@@ -190,6 +194,14 @@ html, body{
 
 .fbox-contact > form{
     font-size: 20px;
+}
+/* Styling för film-sidorna */
+
+.fbox-movieinfo{
+    flex: 50%;
+    width: 50%;
+    padding: 15px 4px;
+    text-align: left;
 }
 
 .plot{
