@@ -47,6 +47,18 @@ html, body{
     
 }
 
+.topnav #myLinks #menulink{
+    min-width: 14vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav #myLinks > div > h3{
+    background-color: white;
+    margin: 2px;
+    padding-left: 1vw;
+}
+
 /* Stylar navigations-länkarna */
 .topnav a {
     color: black;
@@ -62,6 +74,7 @@ html, body{
     display: block;
     position: absolute;
     top: 0;
+    border-radius: 50%;
 }
 
 .topnav a:hover{
@@ -77,6 +90,7 @@ html, body{
  #menu-icon{
     align-self: right;
  }
+ 
 
  /* Grundstruktur för main-segment */
  main{

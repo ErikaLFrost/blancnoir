@@ -6,11 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Detour - Blanc Noir Film Festival</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="hero">
-            <a href="./index.html"></a>
-            <nav><a id="menu-icon"><img src="./images/menu.svg" alt="menu"></a></nav>
+            
+            <div class="container">
+            <!-- Hamburgemeny -->
+            <div class="topnav">
+                
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <!-- Undermeny -->
+                    <a id="menulink" href="./index.html">Hem</a>
+                    <a id="menulink" href="./program.html">Program</a>
+                    <a id="menulink" href="./contact.html">Kontakt</a>
+                    <div><h3>Filmer</h3>
+                        <a  id="menulink" href="./mildred.html">Mildred Pierce</a>
+                        <a  id="menulink" href="./killers.html">The Killers</a>
+                        <a  id="menulink" href="./detour.html">Detour</a>
+                        <a  id="menulink" href="./notorious.html">Notorious</a>
+                        <a  id="menulink" href="./maltese_falcon.html">The Maltese Falcon</a>
+                        <a  id="menulink" href="./shadow_of_a_doubt.html">Shadow of a Doubt</a>
+
+                    </div>
+                </div>
+            <!-- JS för att få fram undermenyn när användaren trycker på hamburgaren -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <script src="navbar.js"></script>
+        
+        </div>
+        </a>
     </header>
     <main>
         <div class="flex-container">

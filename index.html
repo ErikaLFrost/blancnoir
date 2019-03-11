@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="hero">
-            <a href="./index.html">
+            
             <div class="container">
             <!-- Hamburgemeny -->
             <div class="topnav">
@@ -18,18 +18,24 @@
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
                     <!-- Undermeny -->
-                    <a href="./index.html">Hem</a>
-                    <a href="./program.html">Program</a>
-                    <a href="./contact.html">Kontakt</a>
-                    <div>Filmer
-                        <a href="./mildred.html">Mildred Pierce</a>
-                        <a href="./falcon">Falcon</a>
+                    <a id="menulink" href="./index.html">Hem</a>
+                    <a id="menulink" href="./program.html">Program</a>
+                    <a id="menulink" href="./contact.html">Kontakt</a>
+                    <div><h3>Filmer</h3>
+                        <a  id="menulink" href="./mildred.html">Mildred Pierce</a>
+                        <a  id="menulink" href="./killers.html">The Killers</a>
+                        <a  id="menulink" href="./detour.html">Detour</a>
+                        <a  id="menulink" href="./notorious.html">Notorious</a>
+                        <a  id="menulink" href="./maltese_falcon.html">The Maltese Falcon</a>
+                        <a  id="menulink" href="./shadow_of_a_doubt.html">Shadow of a Doubt</a>
+
                     </div>
                 </div>
             <!-- JS för att få fram undermenyn när användaren trycker på hamburgaren -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
-            </a>
+                <script src="navbar.js"></script>
+        
         </div>
         </a>
     </header>
@@ -92,15 +98,6 @@
     <p>&copy; 2019 Blanc Noir Film Festival</p>
     <hr>
 </footer>
-<script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
+
 </body>
 </html>
