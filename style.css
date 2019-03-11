@@ -185,19 +185,18 @@ html, body{
 }
 
 
-
 /* Styling för kontakt-sidan */
 .fbox-contact-img{
     flex: 50%;
     width: 50%;
-    padding: 15px 4px;
+    padding: 40px 4px;
     text-align: center;
 }
 
 .fbox-contact{
     flex: 50%;
     width: 50%;
-    padding: 15px 4px;
+    padding: 40px 4px;
     text-align: left;
 }
 
@@ -209,13 +208,19 @@ html, body{
 .fbox-contact > form{
     font-size: 20px;
 }
+
+
 /* Styling för film-sidorna */
 
 .fbox-movieinfo{
     flex: 50%;
     width: 50%;
-    padding: 15px 4px;
+    padding: 40px 25px;
     text-align: left;
+}
+
+.fbox-movieinfo > h2{
+    margin: 0;
 }
 
 .plot{
