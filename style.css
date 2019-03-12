@@ -173,6 +173,15 @@ html, body{
     color: rgb(37, 37, 36);
 }
 
+.movietext-large{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 4.5vw;
+    color: rgb(37, 37, 36);
+}
+
 .fbox-movies > a > img:hover{
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -181,6 +190,10 @@ html, body{
 }
 
 .fbox-movies > a:hover .movietext{
+    display: flex;
+}
+
+.fbox-movies > a:hover .movietext-large{
     display: flex;
 }
 
