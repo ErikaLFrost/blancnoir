@@ -184,19 +184,19 @@ html, body{
     display: flex;
 }
 
-
 /* Styling för kontakt-sidan */
+
 .fbox-contact-img{
     flex: 50%;
     width: 50%;
-    padding: 40px 4px;
+    padding: 50px 4px 10px;
     text-align: center;
 }
 
 .fbox-contact{
     flex: 50%;
     width: 50%;
-    padding: 40px 4px;
+    padding: 40px 4px 10px;
     text-align: left;
 }
 
@@ -207,8 +207,8 @@ html, body{
 
 .fbox-contact > form{
     font-size: 20px;
+    display: inline-grid;
 }
-
 
 /* Styling för film-sidorna */
 
