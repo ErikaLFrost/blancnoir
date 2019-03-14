@@ -443,8 +443,21 @@ footer > a > img{
         flex-flow: column wrap;
         justify-content: center;
     }
+
     .fbox-movies{
         flex: 100%;
+    }
+
+    .fbox-movies > a > img {
+        margin: 0vw 25vw;
+    }
+
+    .fbox-contact-img{
+        margin: 0vw 25vw;
+    }
+    
+    .fbox-contact{
+        margin: 0vw 25vw;
     }
 
     .fbox-program{
